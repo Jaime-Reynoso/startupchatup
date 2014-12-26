@@ -1,0 +1,39 @@
+body{
+	width: 100%;
+}
+#Navigation{
+	width: 80%;
+	height: 20%;
+	margin: auto;
+	background-color: black;
+}
+/*
+#Navigation a {
+	color: white;
+	font-family: 'Amarante', cursive;
+	border: 1px dashed black;
+}*/
+#Navigation div a{
+	color: white;
+	margin: auto;
+
+}
+#Navigation div{
+	float: left;
+	width: 33.33%;
+	height: 100%;
+	margin: auto;
+	text-align: center;
+}
+#Navigation div a{
+	padding-top: 40%
+}
+#Navigation div.FirstLink{
+	background-color: #669933;
+}
+#Navigation div.SecondLink{
+	background-color: #226666;
+}
+#Navigation div.ThirdLink{
+	background-color: #4F2C73;
+}
