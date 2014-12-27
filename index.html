@@ -2,66 +2,94 @@
 <html>
 <Head>
 	<title>Start Up Chat Up</title>
-	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+	<link rel="stylesheet" type="text/css" href="css/foundation.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link href='http://fonts.googleapis.com/css?family=Amarante' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 </Head>
 <BODY>
-	<div id="Navigation">
-		<div class="FirstLink">
-			<a href="#Introduction">Introduction</a>
-		</div>
-		<div class="SecondLink">
-			<a href="#Pitch">Where do you fit in?</a>
-		</div>
-		<div class="ThirdLink">
-			<a href="#Sign Up">I'm interested!</a>
+
+	<div class="Navigation">
+		<div class="row">
+			<div class="large-4 columns">
+				<H1 class="centerBox" >Start Up Chat Up</H1>
+			</div>
+			<div class="large-8 columns">
+				<ul class="button-group round centerNav">
+					<li><a class ="button alert" href="#Introduction">Introduction</a></li>
+					<li><a class ="button secondary" href="#Pitch">Where do you fit in?</a></li>
+					<li><a class ="button alert" href="#SignUp">I'm interested!</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
+
 	<div id="Introduction">
-		<H1>It's like Chat Roulette (Without the Junk)</H1>
+		<H1 >It's like Chat Roulette <br><span class="hiddenWords">(Without the Junk)</span></H1>
 		<h2>What is Start Up Chat Up?</h2>
 		<p> Start Up Chat Up is a platform where Young Entrepeneurs can chat with seasoned veterans to get all their questions answered!</p>
 	</div>
-	<div id="Pitch">
-		<h2>Why should you use Start Up Chat Up</h2>
-		<ul>
-			<li>Are you a young developer with a good idea?</li>
-			<li>Are you an entrepeneur in need of some guidance?</li>
-		</ul>
-		<p>If you answered yes to any of these questions, then Start Up Chat Up is for you!</p>
-		<p>Start Up Chat Up is a platform where young Entrepeneurs can get solutions to Common Business Problems. You can connect to people who have gone through the same problems you're facing right now, and have found a perfect solution to their problems.</p>
 
-		<h2>Find your business "SoulMate"</h2>
-		<h3>Are you trying to start a business but find it difficult to go through it by yourself?</h3>
-		<p>Being an entrepeneur can be lonely, and having the technical skills doesn't really fulfill all your business needs. Start Up Chat Up was created so that you can connect with other entrepeneurs and increase your odds of success! </p>
-		<h2>Emotional Support For Entrepeneurs</h2>
-		<p>NetWork with like-minded Entrepeneurs who <strong>"get it"</strong></p>
+	<div class="bodyText" id="Pitch">
+
+		<h2 class="centeredHeading">Why should you use Start Up Chat Up?</h2>
+
+		<div class="responseCard" id="firstResponse">
+			<h2>Who are you?</h2>
+			<ul>
+				<li><h4>Are you a young developer with a good idea?</h4></li>
+				<li><h4>Are you an entrepeneur in need of some guidance?</h4></li>
+			</ul>
+			<p>If you answered yes to any of these questions, then Start Up Chat Up is for you!</p>
+			<p>Start Up Chat Up is a platform where young Entrepeneurs can get solutions to Common Business Problems. You can connect to people who have gone through the same problems you're facing right now, and have found a perfect solution to their problems.</p>
+		</div>
+
+		<div class="responseCard" id="secondResponse">
+			<h2>Find your business "SoulMate"</h2>
+
+			<h3>Are you trying to start a business but find it difficult to go through it by yourself?</h3>
+
+			<p>Being an entrepeneur can be lonely, and having the technical skills doesn't really fulfill all your business needs. Start Up Chat Up was created so that you can connect with other entrepeneurs and increase your odds of success! </p>
+		</div>
+
+		<div class="responseCard" id="thirdResponse">
+			<h2>Emotional Support For Entrepeneurs</h2>
+
+			<p>Network with like-minded Entrepeneurs who <strong>"get it"</strong></p>
+			<p>Sometimes it's lonely at the top, so get online and socialize with individuals that are literally in the same shoes as you are!</p>
+		</div>
 	</div>
-	<div id="Sign Up">
-		<h1>Subscribe to our Email List</h1>
-		<form action="signUp/subscribe.php">
-			<p>Just give us your E-Mail, and we will keep you Updated!</p>
-			<input type="text" name="email"/>
-			<input type="image" src="images/subscribe_button.png" width="100" height=20 />
-		</form>
-		<h1>Sign Up to become a beta tester!</h1>
-		<fieldset>
-			<legend>Contact Information</legend>
-			<label>Email <input type="text" name="BetaEmail" /></label>
-			<br />
-			<label>Name <input type="text" name"BetaName"/></label>
-			<br />
-			<input id="Entrepeneur" type="radio" name="person" value="e"/>
-			<label for="Entrepeneur">Entrepeneur</label>
-			<br />
-			<input id="Veteran" type="radio" name="person" value="v"/>
-			<label for="Veteran">Seasoned Veteran</label>
-			<br />
-			<input id="Developer" type="radio" name="person" value="d"/>
-			<label for="Developer">Developer</label>
-		</fieldset>
+
+	<div class="subscribe" id="SignUp">
+		<div class="formStyle">
+			<h1 class="subscribeText">Subscribe to our Email List</h1>
+			<form action="signUp/subscribe.php">
+				<p>Just give us your E-Mail, and we will keep you Updated!</p>
+				<input type="text" name="email"/>
+				<a href="#" class="button round">Subscribe</a>
+			</form>
+		</div>
+		<div class="formStyle">
+			<h1 class="subscribeText">Sign Up to become a beta tester!</h1>
+
+			<fieldset>
+				<legend>Contact Information</legend>
+				<label>Email <input type="text" name="BetaEmail" /></label>
+				<br />
+				<label>Name <input type="text" name"BetaName"/></label>
+				<br />
+				<input id="Entrepeneur" type="radio" name="person" value="e"/>
+				<label for="Entrepeneur">Entrepeneur</label>
+				<br />
+				<input id="Veteran" type="radio" name="person" value="v"/>
+				<label for="Veteran">Seasoned Veteran</label>
+				<br />
+				<input id="Developer" type="radio" name="person" value="d"/>
+				<label for="Developer">Developer</label>
+				<a href="#" class="button round" style="float:right">Sign Me Up!</a>
+			</fieldset>
+		</div>
 	</div>
+
 </BODY>
 </html>
