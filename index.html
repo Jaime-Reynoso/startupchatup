@@ -6,60 +6,54 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/stcu.js"></script>
+	<script type="text/javascript" src="js/jquery.gsap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollmagic.min.js"></script>
+	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
 </Head>
 <BODY>
 
 	<div class="Navigation">
 		<div class="row">
-			<div class="large-4 columns">
+			<div class="small-11 small-centered columns">
 				<H1 class="centerBox" >Start Up Chat Up</H1>
-			</div>
-			<div class="large-8 columns">
-				<ul class="button-group round centerNav">
-					<li><a class ="button alert" href="#Introduction">Introduction</a></li>
-					<li><a class ="button secondary" href="#Pitch">Where do you fit in?</a></li>
-					<li><a class ="button alert" href="#SignUp">I'm interested!</a></li>
-				</ul>
 			</div>
 		</div>
 	</div>
 
 	<div id="Introduction">
-		<H1 >It's like Chat Roulette <br><span class="hiddenWords">(Without the Junk)</span></H1>
-		<h2>What is Start Up Chat Up?</h2>
-		<p> Start Up Chat Up is a platform where Young Entrepeneurs can chat with seasoned veterans to get all their questions answered!</p>
-	</div>
-
-	<div class="bodyText" id="Pitch">
-
-		<h2 class="centeredHeading">Why should you use Start Up Chat Up?</h2>
-
-		<div class="responseCard" id="firstResponse">
-			<h2>Who are you?</h2>
-			<ul>
-				<li><h4>Are you a young developer with a good idea?</h4></li>
-				<li><h4>Are you an entrepeneur in need of some guidance?</h4></li>
-			</ul>
-			<p>If you answered yes to any of these questions, then Start Up Chat Up is for you!</p>
-			<p>Start Up Chat Up is a platform where young Entrepeneurs can get solutions to Common Business Problems. You can connect to people who have gone through the same problems you're facing right now, and have found a perfect solution to their problems.</p>
-		</div>
-
-		<div class="responseCard" id="secondResponse">
-			<h2>Find your business "SoulMate"</h2>
-
-			<h3>Are you trying to start a business but find it difficult to go through it by yourself?</h3>
-
-			<p>Being an entrepeneur can be lonely, and having the technical skills doesn't really fulfill all your business needs. Start Up Chat Up was created so that you can connect with other entrepeneurs and increase your odds of success! </p>
-		</div>
-
-		<div class="responseCard" id="thirdResponse">
-			<h2>Emotional Support For Entrepeneurs</h2>
-
-			<p>Network with like-minded Entrepeneurs who <strong>"get it"</strong></p>
-			<p>Sometimes it's lonely at the top, so get online and socialize with individuals that are literally in the same shoes as you are!</p>
+		<div id="content">
+		<H1 class="textFormat" >It's like Chat Roulette <br><span class="hiddenWords">(Without the Junk)</span></H1>
+		<h2 class="textFormat">What is Start Up Chat Up?</h2>
+		<p class="textFormat"> Start Up Chat Up is a platform where Young Entrepeneurs can chat with seasoned veterans to get all their questions answered!</p>
 		</div>
 	</div>
 
+	<div id="parallax">
+		<div class="bodyText" id="Pitch">
+			<div style="padding-top:5%">
+				<h2 class="centeredHeading" id="Trigger">Why should you use Start Up Chat Up?</h2>
+			</div>
+
+			<div class="responseCard" id="firstResponse">
+				<h1 class="textFormat">Network</h1>
+					<p>Network with experts in the field</p>
+			</div>
+
+			<div class="responseCard" id="secondResponse">
+				<h1 class="textFormat">Create</h1>
+					<p>Get Answers to your Dev Questions</p>
+				
+			</div>
+			<div class="responseCard" id="thirdResponse">
+				<h1 class="textFormat">Collaborate</h1>
+					<p>Find the ideal partner for your project</p>
+			</div>
+		</div>
+	</div>
+	<div
 	<div class="subscribe" id="SignUp">
 		<div class="formStyle">
 			<h1 class="subscribeText">Subscribe to our Email List</h1>
